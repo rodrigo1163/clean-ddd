@@ -1,25 +1,34 @@
-DDD - Domain-Drive Design.
+# DDD — Domain-Driven Design
 
-O DDD é uma metodologia de designer de software, que é uma formar da gente converter uma problema real em software.
+O **Domain-Driven Design (DDD)** é uma abordagem de desenvolvimento de software que busca transformar problemas do mundo real em soluções de software.
 
-Tudo gira por volta de domínio
+No DDD, tudo gira em torno do **domínio**.
+
 ## Domínio
-  - Área de entendimento
-  - Uma onde todas as pessoas envolvidas na contrução do software, tem os conhecimentos muitos semelhantes:
-    - Domain Experts
-      São as pessoas que entendem a fundo as problematicas que a gente ta resolvendo com o nosso software.
-      Ex:
-        Se a gente ta desenvolvendo um software para uma agência de viagens, a pessoa que ta la no balcão no dia a dia vendendo as passagens, é provalvelmente um Experts de domínio, são as pessoas que estão no dia a dia lidando com situações as quais que voce ta criando um software para auxíliar
 
-      As coisas mais importante na criação do software é:
-        - Conversa
+O domínio é a área de conhecimento relacionada ao problema que o software pretende resolver. É nesse contexto que todas as pessoas envolvidas na construção do sistema devem compartilhar conhecimentos e conceitos semelhantes.
 
-    -Linguagem ubíqua ou linguagem de domínio
-      É uma linguagem universal em que todas aas pessoas que estao envolvidas com a contrução daquele software, com a resolução daquele problema, conseguem conversar por igual.
+### Especialistas de domínio — Domain Experts
 
-      Um exemplo de linguagem ubíqua na barbearia:
-        - Usuário do sistema
-        - Cliente
-        - Forncedor
-        - Atendente
-        - Barman
+Os especialistas de domínio são as pessoas que conhecem profundamente os problemas que o software pretende resolver.
+
+Por exemplo, imagine que estamos desenvolvendo um sistema para uma agência de viagens. A pessoa que trabalha diariamente no balcão, vendendo passagens e atendendo clientes, provavelmente é uma especialista de domínio.
+
+Isso acontece porque ela lida todos os dias com as situações, regras e dificuldades que o software deverá auxiliar ou solucionar.
+
+Uma das coisas mais importantes durante a criação de um software é a **conversa** entre os desenvolvedores e os especialistas de domínio.
+
+### Linguagem ubíqua ou linguagem de domínio
+
+A linguagem ubíqua é uma linguagem comum utilizada por todas as pessoas envolvidas na construção do software e na resolução do problema.
+
+Seu objetivo é garantir que desenvolvedores, especialistas de domínio e outras pessoas envolvidas consigam se comunicar utilizando os mesmos termos e significados.
+
+Por exemplo, em um sistema para uma barbearia, alguns termos da linguagem ubíqua podem ser:
+
+* Usuário do sistema;
+* Cliente;
+* Fornecedor;
+* Atendente;
+* Barbeiro;
+* Barman.
