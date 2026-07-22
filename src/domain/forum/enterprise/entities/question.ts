@@ -50,7 +50,7 @@ export class Question extends Entity<QuestionProps> {
 
   set title(title: string) {
     this.props.title = title
-    this.props.slug = Slug.createFromtext(title)
+    this.props.slug = Slug.createFromText(title)
 
     this.touch()
   }
@@ -69,7 +69,7 @@ export class Question extends Entity<QuestionProps> {
   ) {
     const question = new Question({
       ...props,
-      slug: props.slug ?? Slug.createFromtext(props.title),
+      slug: props.slug ?? Slug.createFromText(props.title),
       createdAt: new Date()
     }, id)
 
