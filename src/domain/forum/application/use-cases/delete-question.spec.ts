@@ -1,6 +1,5 @@
 import { InMemoryQuestionsRepository } from '../../../../../test/repositories/in-memory-questions-repository.js'
 import { makeQuestion } from '../../../../../test/factories/make-questions.js'
-import { Slug } from '../../enterprise/entities/value-objects/slug.js'
 import { DeleteQuestionUseCase } from './delete-question.js'
 import { UniqueEntityId } from '@/core/entities/unique-entity-id.js'
 
