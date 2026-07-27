@@ -1,6 +1,7 @@
 import { Answer } from "@/domain/forum/enterprise/entities/answer.js"
 
 import { AnswerRepository as AnswersRepository } from '@/domain/forum/application/repositories/answer-repository.js'
+import { PaginationParams } from "@/core/repositories/pagination-params.js"
 
 
 export class InMemoryAnswersRepository implements AnswersRepository {
@@ -26,5 +27,12 @@ export class InMemoryAnswersRepository implements AnswersRepository {
   async save(answer: Answer) {
     const itemIndex = this.items.findIndex(item => item.id === answer.id)
     this.items[itemIndex] = answer
+  }
+  async findManyByQuestionId(questionId: string, { page }: PaginationParams) {
+    const answers = this.items
+      .filter(item => item.questionId.toString() === questionId)
+      .slice((page - 1) * 20, page * 20)
+
+    return answers
   }
 }
