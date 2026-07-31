@@ -1,4 +1,4 @@
-import { AnswerRepository } from "../repositories/answer-repository.js"
+import { AnswersRepository } from "../repositories/answers-repository.js"
 
 
 interface DeleteAnswerUseCaseRequest {
@@ -7,7 +7,7 @@ interface DeleteAnswerUseCaseRequest {
 }
 
 export class DeleteAnswerUseCase {
-  constructor(private answersRepository: AnswerRepository) { }
+  constructor(private answersRepository: AnswersRepository) { }
 
   async execute({
     authorId,

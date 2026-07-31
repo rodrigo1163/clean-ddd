@@ -1,5 +1,5 @@
 import { Answer } from "../../enterprise/entities/answer.js"
-import { AnswerRepository } from "../repositories/answer-repository.js"
+import { AnswersRepository } from "../repositories/answers-repository.js"
 
 interface EditAnswerUseCaseRequest {
   authorId: string
@@ -12,7 +12,7 @@ interface EditAnswerUseCaseResponse {
 }
 
 export class EditAnswerUseCase {
-  constructor(private answersRepository: AnswerRepository) { }
+  constructor(private answersRepository: AnswersRepository) { }
 
   async execute({
     authorId,

@@ -1,6 +1,6 @@
 import { Answer } from "@/domain/forum/enterprise/entities/answer.js"
 
-import { AnswerRepository as AnswersRepository } from '@/domain/forum/application/repositories/answer-repository.js'
+import { AnswersRepository as AnswersRepository } from '@/domain/forum/application/repositories/answers-repository.js'
 import { PaginationParams } from "@/core/repositories/pagination-params.js"
 
 

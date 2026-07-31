@@ -1,6 +1,6 @@
 import { UniqueEntityId } from "@/core/entities/unique-entity-id.js"
 import { Answer } from "../../enterprise/entities/answer.js"
-import { AnswerRepository } from "../repositories/answer-repository.js"
+import { AnswersRepository } from "../repositories/answers-repository.js"
 import { Question } from "../../enterprise/entities/question.js"
 import { QuestionsRepository } from "../repositories/questions-repository.js"
 
@@ -17,7 +17,7 @@ interface ChooseQuestionBestAnswerUseCaseResponse {
 export class ChooseQuestionBestAnswerUseCase {
   constructor(
     private questionsRepository: QuestionsRepository,
-    private answerRepository: AnswerRepository
+    private answerRepository: AnswersRepository
   ) { }
 
   async execute({
