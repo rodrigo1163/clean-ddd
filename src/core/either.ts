@@ -24,7 +24,7 @@ export class Right<L, R> {
     this.value = value
   }
 
-  isRight(): this is Left<L, R> {
+  isRight(): this is Right<L, R> {
     return true
   }
 
@@ -33,7 +33,7 @@ export class Right<L, R> {
   }
 }
 
-export type Either<L, R> = Left<L, R> | Right<R, R>
+export type Either<L, R> = Left<L, R> | Right<L, R>
 
 export const left = <L, R>(value: L): Either<L, R> => {
   return new Left(value)
