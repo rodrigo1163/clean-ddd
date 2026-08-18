@@ -1,7 +1,7 @@
 import { Question } from '@/domain/forum/enterprise/entities/question.js'
 import { QuestionsRepository } from '../repositories/questions-repository.js'
 import { Either, left, right } from '@/core/either.js'
-import { ResourceNotFoundError } from './errors/resource-not-found-error.js'
+import { ResourceNotFoundError } from '../../../../core/errors/errors/resource-not-found-error.js'
 
 
 interface GetQuestionBySlugUseCaseRequest {

@@ -4,7 +4,7 @@ import { QuestionsRepository } from "../repositories/questions-repository.js"
 import { QuestionComment } from "../../enterprise/entities/question-comment.js"
 import { QuestionCommentsRepository } from "../repositories/question-comments-repository.js"
 import { Either, left, right } from "@/core/either.js"
-import { ResourceNotFoundError } from "./errors/resource-not-found-error.js"
+import { ResourceNotFoundError } from "../../../../core/errors/errors/resource-not-found-error.js"
 
 interface CommentOnQuestionUseCaseRequest {
   authorId: string

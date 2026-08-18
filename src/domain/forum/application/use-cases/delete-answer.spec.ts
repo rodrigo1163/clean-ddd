@@ -2,7 +2,7 @@ import { makeAnswer } from '../../../../../test/factories/make-answers.js'
 import { InMemoryAnswersRepository } from '../../../../../test/repositories/in-memory-answers-repository.js'
 import { DeleteAnswerUseCase } from './delete-answer.js'
 import { UniqueEntityId } from '@/core/entities/unique-entity-id.js'
-import { NotAllowedError } from './errors/not-allowed-error.js'
+import { NotAllowedError } from '../../../../core/errors/errors/not-allowed-error.js'
 import { InMemoryAnswerAttachmentsRepository } from '../../../../../test/repositories/in-memory-answer-attachments-repository.js'
 import { makeAnswerAttachment } from '../../../../../test/factories/make-answer-attachment.js'
 

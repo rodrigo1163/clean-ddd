@@ -5,7 +5,7 @@ import { UniqueEntityId } from '@/core/entities/unique-entity-id.js'
 import { InMemoryAnswersRepository } from '../../../../../test/repositories/in-memory-answers-repository.js'
 import { ChooseQuestionBestAnswerUseCase } from './choose-question-best-answer.js'
 import { makeAnswer } from '../../../../../test/factories/make-answers.js'
-import { NotAllowedError } from './errors/not-allowed-error.js'
+import { NotAllowedError } from '../../../../core/errors/errors/not-allowed-error.js'
 import { InMemoryQuestionAttachmentsRepository } from '../../../../../test/repositories/in-memory-question-attachments-repository.js'
 import { InMemoryAnswerAttachmentsRepository } from '../../../../../test/repositories/in-memory-answer-attachments-repository.js'
 
